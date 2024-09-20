@@ -1,0 +1,10 @@
+spawn bash ./test-a.sh
+
+expect "*Please enter a number (Default*"
+send "1\r"
+expect "*(Default password:*"
+send "testpassword\r"
+expect "*Press any key to start*"
+send "\r"
+
+expect eof
